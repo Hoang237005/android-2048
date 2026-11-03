@@ -1,0 +1,27 @@
+<resources>
+    <string name="g2048_title">2048</string>
+    <string name="g2048_subtitle">PUZZLE LAB / NUMBER GAME</string>
+    <string name="g2048_score_label">SCORE</string>
+    <string name="g2048_best_label">BEST</string>
+    <string name="g2048_hint">Swipe to move. Match equal tiles to reach 2048.</string>
+    <string name="g2048_game_over">No moves left. Start a new game to try again.</string>
+    <string name="g2048_keep_going">2048 reached! Keep going for a higher score.</string>
+    <string name="g2048_new_game">New game</string>
+    <string name="g2048_exit">Back to games</string>
+    <string name="g2048_restart_title">Start a new game?</string>
+    <string name="g2048_restart_message">Your current board will be reset. Your best score will stay.</string>
+    <string name="g2048_win_title">You reached 2048!</string>
+    <string name="g2048_win_message">Great work! You can keep playing for a higher score.</string>
+    <string name="g2048_continue">Keep playing</string>
+    <string name="g2048_up">Up</string>
+    <string name="g2048_down">Down</string>
+    <string name="g2048_left">Left</string>
+    <string name="g2048_right">Right</string>
+    <string name="g2048_controls">Swipe the board or use the buttons below.</string>
+    <string name="g2048_rules">How to play</string>
+    <string name="g2048_rules_text">Tiles slide in the chosen direction. Two equal tiles combine into one, and the new value is added to your score. A new 2 or 4 appears after each valid move. Each tile merges only once per move.</string>
+    <string name="g2048_arrow_left">←</string>
+    <string name="g2048_arrow_up">↑</string>
+    <string name="g2048_arrow_down">↓</string>
+    <string name="g2048_arrow_right">→</string>
+</resources>

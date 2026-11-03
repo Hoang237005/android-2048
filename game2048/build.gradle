@@ -1,0 +1,26 @@
+plugins { id 'com.android.library' }
+android {
+    namespace 'com.example.puzzle.game2048'
+    compileSdk 35
+    resourcePrefix 'g2048_'
+    defaultConfig { minSdk 23 }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// No testing library is required for the rules tests.
+tasks.register('compileEngineChecks', JavaCompile) {
+    source = files('src/main/java/com/example/puzzle/game2048/Game2048.java',
+                   'src/test/java/com/example/puzzle/game2048/Game2048Test.java')
+    classpath = files()
+    destinationDirectory = layout.buildDirectory.dir('engine-checks')
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
+tasks.register('engineTest', JavaExec) {
+    dependsOn 'compileEngineChecks'
+    classpath = files(layout.buildDirectory.dir('engine-checks'))
+    mainClass = 'com.example.puzzle.game2048.Game2048Test'
+}

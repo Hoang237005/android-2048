@@ -1,0 +1,11 @@
+<resources>
+    <style name="g2048_theme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#397D68</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#FAF8F3</item>
+        <item name="android:navigationBarColor">#FAF8F3</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">#FAF8F3</item>
+    </style>
+</resources>
